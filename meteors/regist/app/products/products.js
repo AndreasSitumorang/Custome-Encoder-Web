@@ -27,7 +27,8 @@ function readProductsTemplate(data, keywords) {
         </div>  -->
         
         <div>
-            <button onclick="window.location.href = 'http://localhost/meteors/regist/product/?page=include.php';">Click Here Please</button>
+        <!-- <button onclick="window.location.href = 'http://localhost/meteors/regist/product/?page';">Click Here Please</button> -->
+            <button onclick="window.location.href = 'http://localhost/meteors/regist/product/index.php';">Click Here Please</button>
         </div>
         
         
