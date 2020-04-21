@@ -6,7 +6,7 @@ function readProductsTemplate(data, keywords) {
         <form id='search-product-form' action='#' method='post'>
         <div class='input-group pull-left w-30-pct'>
  
-            <input type='text' value='` + keywords + `' name='keywords' class='form-control product-search-keywords' placeholder='Search products...' />
+            <input type='text' value='` + keywords + `' name='keywords' class='form-control product-search-keywords' placeholder='Search products by Id' />
  
             <span class='input-group-btn'>
                 <button type='submit' class='btn btn-default' type='button'>
@@ -39,7 +39,6 @@ function readProductsTemplate(data, keywords) {
             <tr>
                 <th class='w-25-pct'>Name</th>
                 <th class='w-10-pct'>Price</th>
-                <th class='w-15-pct'>Category</th>
                 <th class='w-25-pct text-align-center'>Action</th>
             </tr>`;
 
@@ -52,8 +51,7 @@ function readProductsTemplate(data, keywords) {
  
             <td>` + val.event + `</td>
             <td>$` + val.price + `</td>
-            <td>` + val.category_name + `</td>
- 
+             
             <!-- 'action' buttons -->
             <td>
                 <!-- read product button -->

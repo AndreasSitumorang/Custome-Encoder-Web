@@ -1,17 +1,15 @@
 <?php
-// echo ("asd   sa");
-// The page we wish to display
+
 $file = $_GET['page'];
 
-function &dvwaPageNewGrab() {
+function &PageGrab() {
 	$returnArray = array(
-		'title'           => 'Damn Vulnerable Web Application (DVWA) v',
 		'body'            => '',
 	);
 	return $returnArray;
 }
 
-$page = dvwaPageNewGrab();
+$page = PageGrab();
 
 if( isset( $file ) )
 	include( $file );
