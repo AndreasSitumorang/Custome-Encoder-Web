@@ -31,6 +31,10 @@ function readProductsTemplate(data, keywords) {
             <button onclick="window.location.href = 'http://localhost/meteors/regist/product/index.php';">Click Here Please</button>
         </div>
         
+        <div>
+            <button onclick="window.location.href = 'http://localhost/meteors/regist/product/csv/csrv.php';">Prosess Transaction</button>
+        </div>
+
         
         <!-- start table -->
         <table class='table table-bordered table-hover'>

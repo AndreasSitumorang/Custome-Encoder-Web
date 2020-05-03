@@ -16,7 +16,7 @@ $DBMS = 'MySQL';
 #   See README.md for more information on this.
 $_DVWA = array();
 $_DVWA[ 'db_server' ]   = '127.0.0.1';
-$_DVWA[ 'db_database' ] = 'api_db';
+$_DVWA[ 'db_database' ] = 'api_db3';
 $_DVWA[ 'db_user' ]     = 'root';
 $_DVWA[ 'db_password' ] = '';
 

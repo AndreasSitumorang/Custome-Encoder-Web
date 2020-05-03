@@ -329,7 +329,7 @@ class Product
         //     return $stmt;
         // New Function Addd----------------------------------------------------------------------------------->
         $host = "localhost";
-        $dbname = "api_db";
+        $dbname = "api_db3";
         $username = "root";
         $password = "";
 

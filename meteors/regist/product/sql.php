@@ -23,7 +23,7 @@ class Product{
        function search($keywords)
        {
            $host = "localhost";
-           $dbname = "api_db";
+           $dbname = "api_db3";
            $username = "root";
            $password = "";
    
